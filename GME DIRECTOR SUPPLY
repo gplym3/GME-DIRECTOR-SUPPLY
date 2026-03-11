@@ -1,0 +1,57 @@
+
+{
+  "name": "gme-coordinator-finder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "exceljs": "^4.4.0",
+    "resend": "^3.2.0",
+    "openai": "^4.47.1",
+    "lucide-react": "^0.469.0"
+  }
+}
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true
+};
+
+module.exports = nextConfig;
+
+
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
+
+# Bing Web Search
+BING_SEARCH_KEY=
+BING_SEARCH_ENDPOINT=https://api.bing.microsoft.com/v7.0/search
+
+# OpenAI
+OPENAI_API_KEY=
+OPENAI_MODEL=gpt-4o-mini
+
+# Resend Email
+RESEND_API_KEY=
+RESEND_FROM="GME Agent <no-reply@yourdomain.com>"
