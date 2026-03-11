@@ -74,3 +74,10 @@ export default function RootLayout({
     </html>
   );
 }
+
+git init
+git add .
+git commit -m "Initial GME agent"
+git branch -M main
+git remote add origin https://github.com/gplym3/gme-coordinator-finder.git
+git push -u origin main
