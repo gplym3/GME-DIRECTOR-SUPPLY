@@ -55,3 +55,22 @@ OPENAI_MODEL=gpt-4o-mini
 # Resend Email
 RESEND_API_KEY=
 RESEND_FROM="GME Agent <no-reply@yourdomain.com>"
+
+xport const metadata = {
+  title: "GME Coordinator Finder",
+  description: "Live GME program coordinator search agent"
+};
+
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body style={{ fontFamily: "system-ui, sans-serif", margin: 0 }}>
+        {children}
+      </body>
+    </html>
+  );
+}
